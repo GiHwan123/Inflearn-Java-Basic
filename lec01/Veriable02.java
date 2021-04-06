@@ -14,5 +14,19 @@ public class Veriable02 {
 		sumValue = firstValue + SecondValue;
 		sumValue = firstValue + SecondValue;
 		System.out.println(sumValue);
+		/*변수명 짓는 방법
+		 * 1. 대소문자 구분되며 길이의 제한이 없어야 한다.
+		 * 2. 예약어 사용하면 안된다.
+		 * 3. 숫자로 시작하면 안된다.
+		 * 4. 특수문자는 _와 $만 허용한다.
+		 * 
+		 * 1. 낙타등 표기법(단어를 대문자로 끊어치는 방법 ex- bankAccount,companyName)
+		 * 2. 연관된 단어로 조합
+		 * 3. companyName,HumanResource(인사) 등 의미있는 변수명을 짓는것이 필수적임.
+		 * 
+		 * */
+		String BankAccount="110-424-033024";
+		int depositMoney=100000;
+		
 	}
 }
