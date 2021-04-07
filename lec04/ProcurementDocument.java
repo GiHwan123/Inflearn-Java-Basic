@@ -2,7 +2,7 @@ package lec04;
 
 public class ProcurementDocument {
 
-	public int procureRequestQty;
+	public int procureRequestDocumentQty;
 	public int orderRequestDocumentQty;
 	public int orderDocumentQty;
 	public int contractDocumentQty;
@@ -10,7 +10,7 @@ public class ProcurementDocument {
 	
 	public int totalDocumentQtyDailyMake() {
 		
-		int totalDocument = procureRequestQty + orderRequestDocumentQty + orderDocumentQty
+		int totalDocument = procureRequestDocumentQty + orderRequestDocumentQty + orderDocumentQty
 				+ contractDocumentQty + estimateDocumentQty;
 		
 		return totalDocument;
