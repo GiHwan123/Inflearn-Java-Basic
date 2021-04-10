@@ -1,18 +1,16 @@
-package lec07.jth.world.vo.chemical;
+package lec07.jth.world.vo.electronics;
 
-//한화 솔루션 케미칼
+public class SKHynix {
 
-public class Hcc {
-
-	private static Hcc hcc= new Hcc();
-	
-	private Hcc(){
+	private static SKHynix SKHynix = new SKHynix();
+	private SKHynix() {
 		
 	}
 	
-	public static Hcc getInstance() {
-		return hcc;
+	public static SKHynix getInstance() {
+		return SKHynix;
 	}
+	
 	private int salesAmount;		//매출액
 	private int propertyAmount;		//자산액
 	private int debtAmount;			//부채액
@@ -21,7 +19,6 @@ public class Hcc {
 	private String headOfficeAddress;	//본점 주소
 	private String companyProperty;		//회사 속성(조선,it,화학,전자)
 	private String companyName;			//회사명
-
 	public int getSalesAmount() {
 		return salesAmount;
 	}
@@ -88,10 +85,10 @@ public class Hcc {
 
 	@Override
 	public String toString() {
-		return "Hcc [salesAmount=" + salesAmount + ", propertyAmount=" + propertyAmount + ", debtAmount=" + debtAmount
-				+ ", capitalAmount=" + capitalAmount + ", totalEmployee=" + totalEmployee + ", headOfficeAddress="
-				+ headOfficeAddress + ", companyProperty=" + companyProperty + ", companyName=" + companyName + "]";
+		return "SKHynix [salesAmount=" + salesAmount + ", propertyAmount=" + propertyAmount + ", debtAmount="
+				+ debtAmount + ", capitalAmount=" + capitalAmount + ", totalEmployee=" + totalEmployee
+				+ ", headOfficeAddress=" + headOfficeAddress + ", companyProperty=" + companyProperty + ", companyName="
+				+ companyName + "]";
 	}
-	
 	
 }
