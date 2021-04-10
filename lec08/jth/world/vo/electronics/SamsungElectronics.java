@@ -1,14 +1,14 @@
-package lec07.jth.world.vo.chemical;
+package lec08.jth.world.vo.electronics;
 
-public class LGChem {
+public class SamsungElectronics {
 	
-	private static LGChem LgChem = new LGChem();
-	private LGChem() {
+	private static SamsungElectronics SamsungElectronics = new SamsungElectronics();
+	private SamsungElectronics() {
 		
 	}
 	
-	public static LGChem getInstance() {
-		return LgChem;
+	public static SamsungElectronics getInstance() {
+		return SamsungElectronics;
 	}
 	
 	private int salesAmount;		//¸ÅÃâ¾×
@@ -85,11 +85,11 @@ public class LGChem {
 
 	@Override
 	public String toString() {
-		return "LGChem [salesAmount=" + salesAmount + ", propertyAmount=" + propertyAmount + ", debtAmount="
+		return "SamsungElectronics [salesAmount=" + salesAmount + ", propertyAmount=" + propertyAmount + ", debtAmount="
 				+ debtAmount + ", capitalAmount=" + capitalAmount + ", totalEmployee=" + totalEmployee
 				+ ", headOfficeAddress=" + headOfficeAddress + ", companyProperty=" + companyProperty + ", companyName="
 				+ companyName + "]";
 	}
-
+	
 	
 }

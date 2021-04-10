@@ -1,4 +1,4 @@
-package lec07.jth.world.main;
+package lec08.jth.world.machine;
 
 import lec07.jth.world.vo.chemical.Hcc;
 import lec07.jth.world.vo.chemical.LGChem;
@@ -7,9 +7,17 @@ import lec07.jth.world.vo.electronics.LGElectronics;
 import lec07.jth.world.vo.electronics.SKHynix;
 import lec07.jth.world.vo.electronics.SamsungElectronics;
 
-public class MainMethod {
+public class SetInfo {
 	
-	public static void main(String[] args) {
+	public Hcc hcc = Hcc.getInstance();
+	public LGChem lgChem = LGChem.getInstance();
+	public LotteChemical lotteChemical =LotteChemical.getInstance();
+	public LGElectronics lgElectronics = LGElectronics.getInstance();
+	public SamsungElectronics samElec = SamsungElectronics.getInstance();
+	public SKHynix skhynix = SKHynix.getInstance();
+	
+	public void SetCompanyInfo() {
+		
 		//기업정보 셋팅
 	//한화솔루션 케미칼
 	Hcc hcc								= Hcc.getInstance();
@@ -132,7 +140,6 @@ public class MainMethod {
 	System.out.println(lgElectronics.toString());
 	System.out.println(samsungElectronics.toString());
 	System.out.println(skhynix.toString());
-	
 	}
 
 }

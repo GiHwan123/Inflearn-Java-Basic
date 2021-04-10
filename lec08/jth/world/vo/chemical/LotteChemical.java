@@ -1,14 +1,15 @@
-package lec07.jth.world.vo.chemical;
+package lec08.jth.world.vo.chemical;
 
-public class LGChem {
+
+public class LotteChemical {
 	
-	private static LGChem LgChem = new LGChem();
-	private LGChem() {
+	private static LotteChemical LotteChemical = new LotteChemical();
+	private LotteChemical() {
 		
 	}
 	
-	public static LGChem getInstance() {
-		return LgChem;
+	public static LotteChemical getInstance() {
+		return LotteChemical;
 	}
 	
 	private int salesAmount;		//¸ÅÃâ¾×
@@ -85,11 +86,11 @@ public class LGChem {
 
 	@Override
 	public String toString() {
-		return "LGChem [salesAmount=" + salesAmount + ", propertyAmount=" + propertyAmount + ", debtAmount="
+		return "LotteChemical [salesAmount=" + salesAmount + ", propertyAmount=" + propertyAmount + ", debtAmount="
 				+ debtAmount + ", capitalAmount=" + capitalAmount + ", totalEmployee=" + totalEmployee
 				+ ", headOfficeAddress=" + headOfficeAddress + ", companyProperty=" + companyProperty + ", companyName="
 				+ companyName + "]";
 	}
-
+	
 	
 }

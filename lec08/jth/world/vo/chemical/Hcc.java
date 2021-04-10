@@ -1,16 +1,18 @@
-package lec07.jth.world.vo.chemical;
+package lec08.jth.world.vo.chemical;
 
-public class LGChem {
+//한화 솔루션 케미칼
+
+public class Hcc {
+
+	private static Hcc hcc= new Hcc();
 	
-	private static LGChem LgChem = new LGChem();
-	private LGChem() {
+	private Hcc(){
 		
 	}
 	
-	public static LGChem getInstance() {
-		return LgChem;
+	public static Hcc getInstance() {
+		return hcc;
 	}
-	
 	private int salesAmount;		//매출액
 	private int propertyAmount;		//자산액
 	private int debtAmount;			//부채액
@@ -19,6 +21,7 @@ public class LGChem {
 	private String headOfficeAddress;	//본점 주소
 	private String companyProperty;		//회사 속성(조선,it,화학,전자)
 	private String companyName;			//회사명
+
 	public int getSalesAmount() {
 		return salesAmount;
 	}
@@ -85,11 +88,10 @@ public class LGChem {
 
 	@Override
 	public String toString() {
-		return "LGChem [salesAmount=" + salesAmount + ", propertyAmount=" + propertyAmount + ", debtAmount="
-				+ debtAmount + ", capitalAmount=" + capitalAmount + ", totalEmployee=" + totalEmployee
-				+ ", headOfficeAddress=" + headOfficeAddress + ", companyProperty=" + companyProperty + ", companyName="
-				+ companyName + "]";
+		return "Hcc [salesAmount=" + salesAmount + ", propertyAmount=" + propertyAmount + ", debtAmount=" + debtAmount
+				+ ", capitalAmount=" + capitalAmount + ", totalEmployee=" + totalEmployee + ", headOfficeAddress="
+				+ headOfficeAddress + ", companyProperty=" + companyProperty + ", companyName=" + companyName + "]";
 	}
-
+	
 	
 }

@@ -13,6 +13,7 @@ public class Hcc {
 	public static Hcc getInstance() {
 		return hcc;
 	}
+	
 	private int salesAmount;		//매출액
 	private int propertyAmount;		//자산액
 	private int debtAmount;			//부채액
